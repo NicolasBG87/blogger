@@ -1,0 +1,47 @@
+.CreatePost {
+  padding: 10px 30px 30px 30px;
+  height: 60vh;
+  width: 600px;
+  overflow: hidden;
+  overflow-y: scroll;
+  text-align: center;
+  position: relative;
+
+  &__heading {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0;
+  }
+
+  & img {
+    width: 200px;
+    margin: 10px 0;
+  }
+
+  &__section {
+    @include fade;
+  }
+
+  & hr {
+    width: 100%;
+    border: 1px solid $text-sub;
+  }
+
+  & i {
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  & button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 95vh;
+    width: 100vw;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,36 @@
+.Modal {
+  @include flex(center, center);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $bg_overlay;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+
+  &__title {
+    background: $bg_primary;
+    font-size: 20px;
+    color: $text_primary;
+    padding: 5px;
+    border-radius: 4px 4px 0 0;
+  }
+
+  &__content {
+    min-width: 200px;
+    background: $bg_secondary;
+    color: $text_primary;
+    position: relative;
+    border-radius: 5px;
+    @include box-shadow;
+  }
+
+  &__close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+
+  @include fade;
+}

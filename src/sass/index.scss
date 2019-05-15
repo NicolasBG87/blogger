@@ -1,0 +1,30 @@
+@import "reset-css";
+
+// BASE
+@import "./base/theme.scss";
+@import "./base/typography.scss";
+@import "./base/util.scss";
+
+// MIXINS
+@import "./mixins/flex.scss";
+@import "./mixins/shadow.scss";
+@import "./mixins/button.scss";
+@import "./mixins/container.scss";
+@import "./mixins/animations.scss";
+@import "./mixins/overlay.scss";
+
+// COMPONENTS
+@import "./components/global.scss";
+@import "./components/navigation.scss";
+@import "./components/sidebar.scss";
+@import "./components/modal.scss";
+@import "./components/form.scss";
+@import "./components/register.scss";
+@import "./components/createPost.scss";
+@import "./components/login.scss";
+@import "./components/toast.scss";
+@import "./components/spinner.scss";
+
+// VIEWS
+@import "./views/home/home.scss";
+@import "./views/post/post.scss";

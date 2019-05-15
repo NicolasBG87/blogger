@@ -1,0 +1,35 @@
+.Sidebar {
+  @include container;
+  width: 320px;
+  position: fixed;
+  top: 110px;
+  left: 20%;
+
+  &__item {
+    @include box-shadow;
+    @include hover-link;
+    display: block;
+    background: $bg_primary;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: $text_primary;
+  }
+
+  @media screen and (max-width: 1650px) {
+    left: 15%;
+  }
+  @media screen and (max-width: 1450px) {
+    left: 10%;
+  }
+  @media screen and (max-width: 1250px) {
+    left: 0;
+  }
+  @media screen and (max-width: 1050px) {
+    height: calc(100vh - 110px);
+    z-index: 1000;
+  }
+}

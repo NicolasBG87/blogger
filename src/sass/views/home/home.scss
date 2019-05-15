@@ -1,0 +1,80 @@
+.Home {
+  @include content-container;
+
+  &__title {
+    @include flex(center, space-between);
+    font-size: 30px;
+    font-weight: 300;
+    padding: 5px 0;
+    border-bottom: 1px solid $text_sub;
+    margin-bottom: 10px;
+
+    & sub {
+      font-size: 20px;
+      color: $text_sub;
+      font-style: italic;
+      margin-left: 10px;
+    }
+  }
+
+  &__post {
+    &:not(:last-child) {
+      border-bottom: 1px solid $text_sub;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+    }
+
+    &--image {
+      width: 100%;
+      height: 150px;
+    }
+
+    &--title {
+      font-size: 25px;
+      background: $bg_primary;
+      display: inline-block;
+      padding: 15px 25px;
+      transform: translateY(-50%);
+    }
+
+    &--tagline {
+      color: $tag;
+      font-weight: 700;
+      font-style: italic;
+      margin-top: -20px;
+    }
+
+    &--author {
+      padding: 5px 0;
+      font-size: 20px;
+
+      & sub {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+
+      & span {
+        color: $tag;
+      }
+    }
+
+    &--time-ago {
+      font-style: italic;
+      color: $text_sub;
+    }
+
+    &--footer {
+      @include flex(center, space-between);
+      margin-top: 10px;
+    }
+  }
+
+  & > button {
+    display: block;
+    margin: 20px auto;
+  }
+
+  & > p {
+    text-align: center;
+  }
+}

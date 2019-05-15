@@ -1,0 +1,35 @@
+.Toast {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: $text_secondary;
+  padding: 15px 35px 15px 15px;
+  min-width: 350px;
+  max-width: 50%;
+  border-radius: 5px;
+  @include box-shadow;
+  @include slide-in-bottom;
+
+  &__info {
+    background: $success;
+  }
+
+  &__danger {
+    background: $error;
+  }
+
+  &__close {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    min-width: 100vw;
+    max-width: 100vw;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+  }
+}

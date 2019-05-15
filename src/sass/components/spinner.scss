@@ -1,0 +1,5 @@
+.Spinner {
+  @include overlay;
+  @include flex(center, center);
+  @include fade;
+}

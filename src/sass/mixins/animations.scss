@@ -1,0 +1,77 @@
+@mixin fade {
+  &-enter {
+    opacity: 0;
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transition: all 500ms ease;
+  }
+
+  &-exit {
+    opacity: 1;
+  }
+
+  &-exit-active {
+    opacity: 0;
+    transition: all 500ms ease;
+  }
+}
+
+@mixin slide-in-bottom {
+  &-enter {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 500ms ease;
+  }
+
+  &-exit {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  &-exit-active {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease;
+  }
+}
+
+@mixin slide-in-left {
+  &-enter {
+    transform: translateX(-100%);
+    transition: all 300ms ease;
+  }
+
+  &-enter-active {
+    transform: translateX(0px);
+    transition: all 300ms ease;
+  }
+
+  &-exit {
+    transform: translateX(0px);
+    transition: all 300ms ease;
+  }
+
+  &-exit-active {
+    transform: translateX(-100%);
+    transition: all 300ms ease;
+  }
+}
+
+@mixin transition-global {
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin hover-link {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: $success;
+  }
+}
