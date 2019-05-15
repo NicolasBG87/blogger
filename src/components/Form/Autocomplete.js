@@ -70,7 +70,7 @@ const Autocomplete = ({ callback, closeMenu }) => {
           {results.map((result, index) => {
             return (
               <Link
-                to={`/post#${result._id}`}
+                to={`/blogger/post#${result._id}`}
                 className="Autocomplete__result-item"
                 key={index}
                 onClick={closeMenu}

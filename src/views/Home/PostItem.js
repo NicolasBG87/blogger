@@ -29,7 +29,7 @@ const PostItem = ({ post }) => {
             {post.comments.length} comment(s)
           </p>
         </div>
-        <Link to={`/post#${post._id}`}>
+        <Link to={`/blogger/post#${post._id}`}>
           <button>Read More</button>
         </Link>
       </div>

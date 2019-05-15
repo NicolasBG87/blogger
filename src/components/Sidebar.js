@@ -13,7 +13,7 @@ const Sidebar = ({ closeMenu }) => {
       <Autocomplete callback={search_posts} closeMenu={closeMenu} />
       {CATEGORIES.map((category, index) => (
         <NavLink
-          to={`/posts#${category}`}
+          to={`/blogger/posts#${category}`}
           className="Sidebar__item"
           key={index}
           onClick={closeMenu}
