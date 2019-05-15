@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/blogger/static/css/main.e259570c.chunk.css",
+    "main.js": "/blogger/static/js/main.9fcc0aa1.chunk.js",
+    "main.js.map": "/blogger/static/js/main.9fcc0aa1.chunk.js.map",
+    "runtime~main.js": "/blogger/static/js/runtime~main.669a5cdf.js",
+    "runtime~main.js.map": "/blogger/static/js/runtime~main.669a5cdf.js.map",
+    "static/css/2.1f156bdb.chunk.css": "/blogger/static/css/2.1f156bdb.chunk.css",
+    "static/js/2.f582a765.chunk.js": "/blogger/static/js/2.f582a765.chunk.js",
+    "static/js/2.f582a765.chunk.js.map": "/blogger/static/js/2.f582a765.chunk.js.map",
+    "index.html": "/blogger/index.html",
+    "precache-manifest.88cecefc94030233bfc25d9069a7e690.js": "/blogger/precache-manifest.88cecefc94030233bfc25d9069a7e690.js",
+    "service-worker.js": "/blogger/service-worker.js",
+    "static/css/2.1f156bdb.chunk.css.map": "/blogger/static/css/2.1f156bdb.chunk.css.map",
+    "static/css/main.e259570c.chunk.css.map": "/blogger/static/css/main.e259570c.chunk.css.map"
+  }
+}
